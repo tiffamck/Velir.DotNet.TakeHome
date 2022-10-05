@@ -17,8 +17,8 @@ Requirements:
 
 The following bugs have been reported with this feature
 
-The error page is not showing.
-Our Contact page is missing from the main header.
-The new Feedback Form page will not load
-Submitting the form does not work.
-The thank you page should display the form responses you submitted but does not.
+X-The error page is not showing.
+X-Our Contact page is missing from the main header.
+X-The new Feedback Form page will not load
+X-Submitting the form does not work.
+X-The thank you page should display the form responses you submitted but does not.

@@ -10,12 +10,21 @@ namespace TakeHome.Controllers
     public class FeedbackController : Controller
     {
         // GET: Feedback
-        
+
         public ActionResult Index()
         {
             return View();
         }
 
+        [HttpGet]
+        [ValidateInput(false)]
+        public ActionResult Feedback()
+        {
+
+            return View();
+        }
+
+        [HttpPost]
         [ValidateInput(true)]
         public ActionResult Feedback(FeedbackForm form)
         {
@@ -24,9 +33,8 @@ namespace TakeHome.Controllers
                 return View("ThankYou", form);
             }
             else
-                ViewBag.Result = "Invalid Entries, Kindly Recheck.";
+                ViewBag.Message = "Invalid Entries, Kindly Recheck.";               
             return View();
         }
-
     }
 }
